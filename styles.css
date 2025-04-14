@@ -42,7 +42,9 @@ body {
 h1, h2, h3 {
     margin-bottom: 1rem;
 }
-
+main h2 { /* Assuming "Background" is an <h2> tag */
+  text-align: center;
+}
 a {
     text-decoration: none;
     color: var(--primary-color);
