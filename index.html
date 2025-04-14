@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css">
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="description" content="Gaurav Varma - AI-First Marketer & Agent Builder specializing in AI agent development for marketing applications">
 </head>
 <body>
     <header>
@@ -32,11 +33,12 @@
             <h2>About Me</h2>
             <div class="about-content">
                 <div class="about-image">
-                    <img src="https://avatars.githubusercontent.com/u/[your-github-id]" alt="Gaurav Varma">
+                    <img src="https://avatars.githubusercontent.com/u/GauravVarma-web" alt="Gaurav Varma">
                 </div>
                 <div class="about-text">
                     <p>I build AI agents that solve practical marketing problems. With a background in marketing and technology, I create solutions that bridge the gap between advanced AI capabilities and real business challenges.</p>
-                    <p>My focus is on developing intelligent agents that can automate complex marketing tasks, provide data-driven insights, and enhance customer experiences through the power of AI.</p>
+                    <p>My focus is on applying innovative AI agent architectures to automate marketing tasks, provide data-driven insights, and enhance customer experiences through personalization.</p>
+                    <p>By leveraging the latest advances in large language models, prompt engineering, and function calling, I develop intelligent agents that can reason through complex problems and take actions to solve them.</p>
                 </div>
             </div>
         </div>
@@ -56,13 +58,13 @@
                 </div>
                 <div class="buttons">
                     <a href="https://github.com/GauravVarma-web/travel-planner-agent" class="button">View Repository</a>
-                    <a href="#" class="button button-secondary">Live Demo</a>
+                    <button class="button button-secondary show-modal" data-modal="modal-travel">Project Details</button>
                 </div>
             </div>
 
             <div class="portfolio-item coming-soon">
                 <h3>Marketing Content Calendar Agent</h3>
-                <p>AI agent that helps plan and optimize content calendars based on audience data and trends.</p>
+                <p>AI agent that helps plan and optimize content calendars based on audience data, SEO trends, and content gaps.</p>
                 <div class="tags">
                     <span>Chain-of-Thought</span>
                     <span>Content Strategy</span>
@@ -72,7 +74,7 @@
 
             <div class="portfolio-item coming-soon">
                 <h3>Competitive Analysis Agent</h3>
-                <p>Intelligent agent that monitors competitors and provides strategic insights.</p>
+                <p>Intelligent agent that monitors competitor activities and provides strategic insights for market positioning.</p>
                 <div class="tags">
                     <span>Market Intelligence</span>
                     <span>Data Analysis</span>
@@ -126,7 +128,7 @@
     <section id="contact" class="section-dark">
         <div class="container">
             <h2>Get In Touch</h2>
-            <p class="center-text">Interested in collaborating on AI marketing projects? Let's connect!</p>
+            <p class="center-text">Interested in discussing AI-driven marketing solutions? Let's connect!</p>
             
             <div class="contact-methods">
                 <a href="mailto:gaurav.varma@gmail.com" class="contact-method">
@@ -145,10 +147,46 @@
         </div>
     </section>
 
+    <!-- Project Modals -->
+    <div id="modal-travel" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-header">
+                <h3>Travel Planner Agent</h3>
+            </div>
+            <div class="modal-body">
+                <img src="https://via.placeholder.com/800x400?text=Travel+Agent+Screenshot" alt="Travel Agent Screenshot">
+                <h4>Project Overview</h4>
+                <p>This AI agent helps users plan travel by providing weather information, flight details, and attraction recommendations for various destinations.</p>
+                
+                <h4>Technical Implementation</h4>
+                <p>The agent is built using the ReAct (Reasoning + Acting) pattern, which enables it to think step-by-step about a problem, take actions to gather information, and provide reasoned responses.</p>
+                
+                <h4>Key Features</h4>
+                <ul>
+                    <li>Weather information for destinations</li>
+                    <li>Flight time and price estimates</li>
+                    <li>Local attraction recommendations</li>
+                    <li>Multi-turn conversations</li>
+                    <li>Reasoning capabilities</li>
+                </ul>
+                
+                <h4>Technologies Used</h4>
+                <p>Python, OpenAI API, ReAct pattern, JSON parsing, and a modular function architecture that can be extended to other domains.</p>
+                
+                <div class="buttons">
+                    <a href="https://github.com/GauravVarma-web/travel-planner-agent" class="button">View Repository</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <footer>
         <div class="container">
-            <p>&copy; 2025 Gaurav Varma. All rights reserved.</p>
+            <p>&copy; <span class="current-year">2025</span> Gaurav Varma. All rights reserved.</p>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
