@@ -138,7 +138,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (yearSpan) {
         yearSpan.textContent = new Date().getFullYear();
     }
-});
+
 // Particle animation for header
 document.addEventListener('DOMContentLoaded', function() {
     const canvas = document.getElementById('particles-canvas');
