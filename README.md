@@ -10,7 +10,7 @@ A demonstration of the ReAct pattern for building interactive AI agents that can
 - Access external tools and data sources
 - Follow multi-step reasoning processes
 - Provide contextual recommendations
-[View Repository]
+View Repo: https://github.com/GauravVarma-web/travel-planner-agent
 
 #### More Agents Coming Soon!
 - Marketing Campaign Planner
