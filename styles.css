@@ -225,6 +225,11 @@ section h2::after {
 .about-text p {
     margin-bottom: 1rem;
 }
+.heading-sm {
+  font-size: 1.5rem; /* Adjust this value as needed */
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
 
 /* Portfolio Section */
 .portfolio-item {
