@@ -12,125 +12,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-.logo {
-    max-height: 40px;
-    margin-bottom: 10px;
-}
 
-.about-section {
-  padding: 20px;
-  text-align: center; /* Center the whole section, including the title */
-}
-
-.section-title {
-  text-align: center; /* Redundant, but ensures title is centered */
-  margin-bottom: 2.5rem;
-}
-/* Custom styles to override defaults */
-/* Custom styles - more targeted */
-.custom-layout {
-  display: flex;
-  align-items: flex-start;
-  gap: 2.5rem;
-}
-
-.left-aligned {
-  margin-left: -30px;
-}
-
-/* Only target the about text, not all text */
-.about-text-proper p {
-  color: #333; /* Dark text color that's readable */
-  margin-bottom: 1.5rem;
-  line-height: 1.6;
-  max-width: 600px;
-  font-weight: normal;
-}
-
-.about-image img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid #fff;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-/* Media query for mobile */
-@media (max-width: 768px) {
-  .custom-layout {
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .left-aligned {
-    margin-left: 0;
-    margin-bottom: 1.5rem;
-  }
-}
-}
-.about-content {
-  display: flex;
-  flex-direction: row; /* Keep image and text in a row */
-  align-items: center;
-  justify-content: flex-start; /* Align items to the start (left in LTR) */
-  gap: 2rem;
-  margin: 0 auto; /* Center the content horizontally */
-  max-width: 600px; /* Add a max-width to prevent it from stretching too wide */
-}
-/* Add this to your CSS to ensure light fonts */
-.section-light {
-  color: #e2e8f0; /* Light color for text */
-  background-color: #2d3748; /* Dark background */
-}
-
-.section-light h2 {
-  color: #e2e8f0; /* Light color for headings */
-}
-
-.about-text p {
-  color: #e2e8f0; /* Explicitly set light text color for paragraphs */
-}
-.profile-image {
-  flex: 0 0 auto;
-  margin-right: 2rem; /* Add space between image and text */
-}
-
-.about-text {
-  flex: 1 1 auto;
-  text-align: left; /* Re-align text to the left */
-}
-
-.about-text p {
-  margin-bottom: 1rem;
-}
-
-.about-image img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  object-fit: cover;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  border: 3px solid white;
-}
-
-@media (max-width: 768px) {
-  .about-content {
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-  }
-
-  .about-image {
-    margin-bottom: 1.5rem;
-    margin-right: 0;
-  }
-
-  .about-text {
-    text-align: center;
-  }
-}
-}
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
@@ -146,13 +28,14 @@ body {
 
 h1, h2, h3 {
     margin-bottom: 1rem;
+    color: #333;
 }
+
 h2 {
-  text-align: center;
+    text-align: center;
+    color: #333;
 }
-main h2 { /* Assuming "Background" is an <h2> tag */
-  text-align: center;
-}
+
 a {
     text-decoration: none;
     color: var(--primary-color);
@@ -171,19 +54,7 @@ img {
     max-width: 100%;
 }
 
-.section {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
-}
-
-.section.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
 /* Header */
-/* Header with sunset gradient */
 header {
     position: relative;
     color: white;
@@ -196,15 +67,9 @@ header {
 }
 
 @keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 #particles-canvas {
@@ -225,12 +90,14 @@ header h1 {
     font-size: 2.8rem;
     margin-bottom: 0.5rem;
     text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    color: white;
 }
 
 .subtitle {
     font-size: 1.4rem;
     opacity: 0.9;
     text-shadow: 0 1px 3px rgba(0,0,0,0.15);
+    color: white;
 }
 
 /* Navigation */
@@ -282,16 +149,11 @@ nav a:hover::after {
     background-color: var(--light-color);
 }
 
-.section-dark {
-    padding: 4rem 0;
-    background-color: #f1f5f9;
-}
-
 section h2 {
     text-align: center;
     margin-bottom: 2.5rem;
     font-size: 2rem;
-    color: var(--dark-color);
+    color: #333;
     position: relative;
     padding-bottom: 1rem;
 }
@@ -308,37 +170,41 @@ section h2::after {
 }
 
 /* About Section */
+.about-section {
+    padding: 20px;
+}
+
 .about-content {
     display: flex;
-    align-items: center;
-    gap: 2rem;
+    align-items: flex-start;
+    gap: 2.5rem;
+    margin: 0 auto;
 }
 
-.about-image {
-    flex: 1;
+.profile-image {
+    flex: 0 0 auto;
+    margin-left: -20px;
 }
 
-.about-image img {
+.profile-image img {
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-}
-
-.about-image img:hover {
-    transform: scale(1.05);
+    object-fit: cover;
+    border: 3px solid white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .about-text {
-    flex: 2;
+    flex: 1;
+    text-align: left;
 }
 
 .about-text p {
-    margin-bottom: 1rem;
-}
-.heading-sm {
-  font-size: 1.5rem; /* Adjust this value as needed */
-  line-height: 1.2;
-  margin-bottom: 1rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    max-width: 600px;
 }
 
 /* Portfolio Section */
@@ -351,6 +217,7 @@ section h2::after {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
     overflow: hidden;
+    color: #333;
 }
 
 .portfolio-item:hover {
@@ -372,6 +239,10 @@ section h2::after {
     color: var(--primary-color);
 }
 
+.portfolio-item p {
+    color: #333;
+}
+
 .tags {
     margin: 1rem 0;
 }
@@ -385,6 +256,7 @@ section h2::after {
     display: inline-block;
     margin-bottom: 0.5rem;
     transition: background 0.3s ease;
+    color: #333;
 }
 
 .tags span:hover {
@@ -450,6 +322,7 @@ section h2::after {
     padding: 1.5rem;
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     transition: transform 0.3s ease;
+    color: #333;
 }
 
 .skill-category:hover {
@@ -465,12 +338,14 @@ section h2::after {
 
 .skill-category ul {
     margin-top: 1rem;
+    color: #333;
 }
 
 .skill-category li {
     margin-bottom: 0.5rem;
     display: flex;
     align-items: center;
+    color: #333;
 }
 
 .skill-category li:before {
@@ -483,6 +358,7 @@ section h2::after {
 .center-text {
     text-align: center;
     margin-bottom: 2rem;
+    color: #333;
 }
 
 .contact-methods {
@@ -512,146 +388,4 @@ section h2::after {
 
 .contact-method i {
     font-size: 2rem;
-    margin-bottom: 0.5rem;
-}
-
-/* Footer */
-footer {
-    background: var(--dark-color);
-    color: white;
-    text-align: center;
-    padding: 2rem 0;
-}
-
-/* Modal for projects */
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.7);
-}
-
-.modal-content {
-    background-color: #fefefe;
-    margin: 10% auto;
-    padding: 20px;
-    border-radius: 8px;
-    width: 80%;
-    max-width: 800px;
-    position: relative;
-    animation: modalopen 0.5s;
-}
-
-@keyframes modalopen {
-    from {opacity: 0; transform: translateY(-20px);}
-    to {opacity: 1; transform: translateY(0);}
-}
-
-.close-modal {
-    color: #aaa;
-    position: absolute;
-    top: 10px;
-    right: 25px;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.close-modal:hover {
-    color: black;
-}
-
-.modal-header {
-    margin-bottom: 20px;
-}
-
-.modal-body img {
-    width: 100%;
-    margin-bottom: 20px;
-    border-radius: 8px;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .about-content {
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    .about-image {
-        margin-bottom: 1.5rem;
-    }
-    
-    .skills-container {
-        flex-direction: column;
-    }
-    
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    nav li {
-        margin: 0.5rem 0;
-    }
-    
-    .contact-methods {
-        flex-direction: column;
-        align-items: center;
-        gap: 1.5rem;
-    }
-    
-    .contact-method {
-        width: 100%;
-        max-width: 250px;
-    }
-}
-
-/* Dark mode */
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: #1a202c;
-        color: #e2e8f0;
-    }
-    
-    .section-light {
-        background-color: #2d3748;
-    }
-    
-    .section-dark {
-        background-color: #1a202c;
-    }
-    
-    section h2 {
-        color: #e2e8f0;
-    }
-    
-    .portfolio-item,
-    .skill-category,
-    .contact-method {
-        background: #2d3748;
-        color: #e2e8f0;
-    }
-    
-    .tags span {
-        background: #4a5568;
-    }
-    
-    .modal-content {
-        background-color: #2d3748;
-        color: #e2e8f0;
-    }
-    
-    .close-modal {
-        color: #e2e8f0;
-    }
-    
-    .close-modal:hover {
-        color: white;
-    }
-}
+    margin-bot
