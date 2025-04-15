@@ -17,40 +17,65 @@
     margin-bottom: 10px;
 }
 
-.about-image img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    border: 3px solid white;
-}
- .about-section {
+.about-section {
   padding: 20px;
- }
+  text-align: center; /* Center the whole section, including the title */
+}
 
- .section-title {
-  text-align: center;
- }
+.section-title {
+  text-align: center; /* Redundant, but ensures title is centered */
+  margin-bottom: 2.5rem;
+}
 
- .about-content {
+.about-content {
   display: flex;
-  flex-direction: row;
-  align-items: center; /* Vertically center the content */
-  gap: 20px; /* Space between image and text */
- }
+  flex-direction: row; /* Keep image and text in a row */
+  align-items: center;
+  justify-content: flex-start; /* Align items to the start (left in LTR) */
+  gap: 2rem;
+  margin: 0 auto; /* Center the content horizontally */
+  max-width: 600px; /* Add a max-width to prevent it from stretching too wide */
+}
 
- .profile-image {
-  flex: 0 0 auto; /* Don't grow or shrink, auto width */
- }
+.profile-image {
+  flex: 0 0 auto;
+  margin-right: 2rem; /* Add space between image and text */
+}
 
- .about-text {
-  flex: 1 1 auto; /* Grow and shrink as needed */
- }
+.about-text {
+  flex: 1 1 auto;
+  text-align: left; /* Re-align text to the left */
+}
 
- .about-text p {
-  margin-bottom: 10px; /* Space between paragraphs */
- }
+.about-text p {
+  margin-bottom: 1rem;
+}
+
+.about-image img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border: 3px solid white;
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .about-image {
+    margin-bottom: 1.5rem;
+    margin-right: 0;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+}
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
