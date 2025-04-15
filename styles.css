@@ -27,25 +27,24 @@
   margin-bottom: 2.5rem;
 }
 /* Custom styles to override defaults */
+/* Custom styles - more targeted */
 .custom-layout {
   display: flex;
-  align-items: flex-start; /* Align to top */
+  align-items: flex-start;
   gap: 2.5rem;
 }
 
 .left-aligned {
-  margin-left: -30px; /* Move image more to the left */
+  margin-left: -30px;
 }
 
-.light-text p {
-  color: #8ca8d8 !important; /* Light blue color like your example */
+/* Only target the about text, not all text */
+.about-text-proper p {
+  color: #333; /* Dark text color that's readable */
   margin-bottom: 1.5rem;
   line-height: 1.6;
-  max-width: 600px; /* Control line length */
-}
-
-.about-section h2::after {
-  background-color: #4169e1; /* Blue underline for heading */
+  max-width: 600px;
+  font-weight: normal;
 }
 
 .about-image img {
@@ -65,9 +64,10 @@
   }
   
   .left-aligned {
-    margin-left: 0; /* Reset on mobile */
+    margin-left: 0;
     margin-bottom: 1.5rem;
   }
+}
 }
 .about-content {
   display: flex;
