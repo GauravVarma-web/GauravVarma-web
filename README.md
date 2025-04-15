@@ -1,11 +1,11 @@
 # Gaurav Varma
-## AI-First Marketer & Agent Builder
+## AI-First Marketer & Self Taught Agent Builder
 
 I build AI agents that solve practical marketing problems. With a background in marketing and technology, I create solutions that bridge the gap between advanced AI capabilities and real business challenges.
 
 ### 🤖 AI Agent Portfolio
 
-#### Travel Planning Agent
+#### Travel Planning Agent - Tool-Based Agent
 A demonstration of the ReAct pattern for building interactive AI agents that can:
 - Access external tools and data sources
 - Follow multi-step reasoning processes
