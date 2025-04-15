@@ -36,7 +36,19 @@
   margin: 0 auto; /* Center the content horizontally */
   max-width: 600px; /* Add a max-width to prevent it from stretching too wide */
 }
+/* Add this to your CSS to ensure light fonts */
+.section-light {
+  color: #e2e8f0; /* Light color for text */
+  background-color: #2d3748; /* Dark background */
+}
 
+.section-light h2 {
+  color: #e2e8f0; /* Light color for headings */
+}
+
+.about-text p {
+  color: #e2e8f0; /* Explicitly set light text color for paragraphs */
+}
 .profile-image {
   flex: 0 0 auto;
   margin-right: 2rem; /* Add space between image and text */
