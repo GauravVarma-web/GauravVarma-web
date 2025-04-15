@@ -26,7 +26,49 @@
   text-align: center; /* Redundant, but ensures title is centered */
   margin-bottom: 2.5rem;
 }
+/* Custom styles to override defaults */
+.custom-layout {
+  display: flex;
+  align-items: flex-start; /* Align to top */
+  gap: 2.5rem;
+}
 
+.left-aligned {
+  margin-left: -30px; /* Move image more to the left */
+}
+
+.light-text p {
+  color: #8ca8d8 !important; /* Light blue color like your example */
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  max-width: 600px; /* Control line length */
+}
+
+.about-section h2::after {
+  background-color: #4169e1; /* Blue underline for heading */
+}
+
+.about-image img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Media query for mobile */
+@media (max-width: 768px) {
+  .custom-layout {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .left-aligned {
+    margin-left: 0; /* Reset on mobile */
+    margin-bottom: 1.5rem;
+  }
+}
 .about-content {
   display: flex;
   flex-direction: row; /* Keep image and text in a row */
