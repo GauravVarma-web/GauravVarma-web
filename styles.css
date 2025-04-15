@@ -165,38 +165,37 @@ section h2::after {
     background-color: var(--primary-color);
 }
 
-/* Bio section styles */
-.bio-layout {
+/* About Section with Image Left, Text Right */
+.about-container {
     display: flex;
-    margin: 0 auto;
-    max-width: 1000px;
-    gap: 30px;
     align-items: flex-start;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
-.headshot-container {
-    margin-left: -30px;
+.about-image {
     flex: 0 0 auto;
+    margin-left: -20px; /* Move image slightly to the left */
 }
 
-.circular-headshot {
+.about-image img {
     width: 200px;
     height: 200px;
-    border-radius: 50%;
+    border-radius: 50%; /* Makes the image circular */
     object-fit: cover;
     border: 3px solid #fff;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-.bio-text {
+.about-text {
     flex: 1;
 }
 
-.bio-text p {
+.about-text p {
     margin-bottom: 16px;
     line-height: 1.6;
     color: #6e7c87; /* Lighter font color */
-    font-weight: normal;
 }
 
 /* Portfolio Section */
@@ -226,11 +225,19 @@ section h2::after {
     background-color: var(--primary-color);
 }
 
-.portfolio-item h3 {
+.portfolio-title {
     color: var(--primary-color);
+    font-weight: 600;
 }
 
 .portfolio-item p {
+    color: #6e7c87; /* Consistent light text color */
+    margin-bottom: 1rem;
+}
+
+/* All portfolio items should have the same styling */
+.portfolio-item, 
+.portfolio-item.coming-soon {
     color: #6e7c87;
 }
 
@@ -247,7 +254,7 @@ section h2::after {
     display: inline-block;
     margin-bottom: 0.5rem;
     transition: background 0.3s ease;
-    color: #4a5568;
+    color: #4a5568; /* Consistent text color for tags */
 }
 
 .tags span:hover {
@@ -334,7 +341,7 @@ section h2::after {
     margin-bottom: 0.5rem;
     display: flex;
     align-items: center;
-    color: #6e7c87;
+    color: #6e7c87; /* Consistent light text color */
 }
 
 .skill-category li:before {
@@ -347,7 +354,7 @@ section h2::after {
 .center-text {
     text-align: center;
     margin-bottom: 2rem;
-    color: #6e7c87;
+    color: #6e7c87; /* Consistent light text color */
 }
 
 .contact-methods {
@@ -442,7 +449,7 @@ footer {
 }
 
 .modal-body p, .modal-body li {
-    color: #6e7c87;
+    color: #6e7c87; /* Consistent light text */
 }
 
 .modal-body h4 {
@@ -452,17 +459,17 @@ footer {
 
 /* Responsive */
 @media (max-width: 768px) {
-    .bio-layout {
+    .about-container {
         flex-direction: column;
         align-items: center;
     }
     
-    .headshot-container {
+    .about-image {
         margin-left: 0;
         margin-bottom: 20px;
     }
     
-    .bio-text {
+    .about-text {
         text-align: center;
     }
     
