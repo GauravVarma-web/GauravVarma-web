@@ -22,6 +22,15 @@ A Retrieval-Augmented Generation (RAG) agent built to provide intelligent market
 - Support data-driven marketing decisions
 View Repo: https://github.com/GauravVarma-web/RAG-Marketing-Agent
 
+#### Marketing Workflow Agent
+This AI agent demonstrates automation of multi-step marketing workflows using the ReAct (Reasoning + Acting) pattern. The agent can analyze marketing campaign data, generate content based on insights, and schedule content for publishing.
+Features
+- Campaign Analysis: Analyze marketing campaign data to extract metrics, insights, and recommendations
+- Content Generation: Create marketing content based on topics, audience, and tone preferences
+- Content Scheduling: Schedule content for publication across various platforms
+- Workflow Automation: Chain multiple marketing tasks into end-to-end workflows
+View Repo: https://github.com/GauravVarma-web/Marketing-Workflow-Agent
+
 ### 🧠 AI Expertise
 - **Agent Architectures**: ReAct, Chain-of-Thought, Few-Shot Learning
 - **Prompt Engineering**: System prompts, multi-turn conversations
