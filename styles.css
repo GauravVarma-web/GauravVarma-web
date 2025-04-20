@@ -553,8 +553,8 @@ footer {
 
 /* Blog Page Styles */
 .blog-header {
-    background-color: #3498db;
-    background-image: linear-gradient(135deg, #3498db 0%, #2c3e50 100%);
+    background-color: #ff7f50; /* Orange instead of #3498db blue */
+    background-image: linear-gradient(135deg, #ff7f50 0%, #e67e22 100%);
     color: white;
     padding: 80px 0 40px;
     text-align: center;
