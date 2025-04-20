@@ -14,10 +14,13 @@ A demonstration of the ReAct pattern for building interactive AI agents that can
 - Provide contextual recommendations
 View Repo: https://github.com/GauravVarma-web/travel-planner-agent
 
-#### More Agents Coming Soon!
-- Marketing Campaign Planner
-- Content Calendar Optimizer
-- Competitive Analysis Agent
+#### RAG Based Agent for Marketing Documents - RAG Marketing Agent
+A Retrieval-Augmented Generation (RAG) agent built to provide intelligent marketing insights and recommendations based on your marketing documents and industry best practices.
+- Answer questions about marketing strategies and campaigns
+- Provide insights based on your marketing documentation
+- Ensure consistent and accurate messaging
+- Support data-driven marketing decisions
+View Repo: https://github.com/GauravVarma-web/RAG-Marketing-Agent
 
 ### 🧠 AI Expertise
 - **Agent Architectures**: ReAct, Chain-of-Thought, Few-Shot Learning
