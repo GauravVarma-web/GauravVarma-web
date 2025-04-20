@@ -1,7 +1,9 @@
 # Gaurav Varma
 ## AI-First Marketer & Self Taught Agent Builder
 
-I build AI agents that solve practical marketing problems. With a background in marketing and technology, I create solutions that bridge the gap between advanced AI capabilities and real business challenges.
+I'm a marketing leader in a San Francisco Bay Area tech company, over the years I have held progressive roles across Product Marketing, Field, Brand, and Demand Generation functions.
+Fascinated by AI's potential in marketing, I've taken a hands-on approach to mastering this technology by building practical AI agents that solve real marketing problems.
+I bridge marketing expertise with technical skills to create solutions that automate marketing workflows, deliver data-driven insights, and enhance customer experiences. My approach leverages large language models, strategic prompt engineering, and function calling to build intelligent agents that reason through complex challenges and take autonomous action.
 
 ### 🤖 AI Agent Portfolio
 
