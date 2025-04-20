@@ -30,6 +30,7 @@ Features
 - Content Generation: Create marketing content based on topics, audience, and tone preferences
 - Content Scheduling: Schedule content for publication across various platforms
 - Workflow Automation: Chain multiple marketing tasks into end-to-end workflows
+
 View Repo: https://github.com/GauravVarma-web/Marketing-Workflow-Agent
 
 ### 🧠 AI Expertise
