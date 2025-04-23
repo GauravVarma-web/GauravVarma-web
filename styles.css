@@ -773,3 +773,43 @@ footer {
         margin-bottom: 20px;
     }
 }
+
+/* Add these styles to your styles.css file */
+
+/* Multiple blog previews with gap */
+.blog-preview {
+    margin-bottom: 40px;
+}
+
+.blog-preview:last-child {
+    margin-bottom: 30px;
+}
+
+/* Center buttons container */
+.center-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Active blog navigation item */
+.blog-list li.active {
+    border-left-color: #ff7f50; /* Orange instead of blue */
+}
+
+.blog-list li:hover {
+    border-left-color: #ff7f50; /* Orange instead of blue */
+}
+
+.blog-list li:hover a {
+    color: #ff7f50; /* Orange instead of blue */
+}
+
+/* Fix for post-content h4 color */
+.post-content h4 {
+    color: #e67e22; /* Orange instead of blue */
+}
+
+/* Fix for share link hover color */
+.share-link:hover {
+    color: #ff7f50; /* Orange instead of blue */
+}
